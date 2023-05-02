@@ -2,18 +2,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Login"
-             BackgroundColor="#1DB954">
+             BackgroundColor="#6126e0">
 
     
     
 
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Vitus" TextColor="Black" FontSize="75" HorizontalOptions="CenterAndExpand"/>
+        <StackLayout VerticalOptions="Center">
+            <Label Text="Vitus" TextColor="Black" FontSize="90" HorizontalOptions="CenterAndExpand"/>
             <Frame CornerRadius="10" x:Name="frm_dados" VerticalOptions="Center"
                    BackgroundColor="#010012" BorderColor="White" Opacity="1">
 
-                <StackLayout>
+                <StackLayout Spacing="70">
 
                     <Label Text="Login Conta" TextColor="#1DB954" FontSize="Title" HorizontalOptions="Center"/>
 
