@@ -31,6 +31,14 @@
                 
             </Frame>
 
+            <Frame>
+                <StackLayout>
+                    <Label Text="Não tem uma conta?" TextColor="White"/>
+
+                    <Button Text="Cadastre-se" TextColor="Black" Clicked="Button_Clicked_1" BackgroundColor="#1DB954"/>
+                </StackLayout>
+            </Frame>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
