@@ -2,30 +2,32 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Login"
-             BackgroundColor="#6126e0">
+             xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry"
+             BackgroundColor="White">
+    
+    <!--mascara xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry" -->
 
-    
-    
+
 
     <ContentPage.Content>
         <StackLayout VerticalOptions="Center">
             <Label Text="Vitus" TextColor="Black" FontSize="90" HorizontalOptions="CenterAndExpand"/>
             <Frame CornerRadius="10" x:Name="frm_dados" VerticalOptions="Center"
-                   BackgroundColor="#010012" BorderColor="White" Opacity="1">
+                   BackgroundColor="#280354" BorderColor="White" Opacity="1">
 
                 <StackLayout Spacing="70">
 
-                    <Label Text="Login Conta" TextColor="#1DB954" FontSize="Title" HorizontalOptions="Center"/>
+                    <Label Text="Login Conta" TextColor="White" FontSize="Title" HorizontalOptions="Center"/>
 
-                    <Label Text="CPF:" TextColor="#1DB954" FontSize="Large"/>
+                    <Label Text="CPF:" TextColor="White" FontSize="Large"/>
 
-                    <Entry x:Name="conta_cpf" TextColor="#1DB954" Placeholder="Insira seu CPF" PlaceholderColor="#1DB954"/>
+                    <control:MaskedEntry Placeholder="CPF" Mask="XXX.XXX.XXX-XX" Keyboard="Numeric"  PlaceholderColor="#1DB954" TextColor="White"/>
 
-                    <Label Text="Senha:" TextColor="#1DB954" FontSize="Large"/>
+                    <Label Text="Senha:" TextColor="White" FontSize="Large"/>
 
-                    <Entry IsPassword="True" x:Name="conta_pw" Placeholder="Insira sua senha" TextColor="#1DB954" PlaceholderColor="#1DB954"/>
+                    <Entry IsPassword="True" x:Name="conta_pw" Placeholder="Insira sua senha" TextColor="#1DB954" PlaceholderColor="#56C8A7"/>
 
-                    <Button Text="Conectar" TextColor="Black" Clicked="Button_Clicked" BackgroundColor="#1DB954"/>
+                    <Button Text="Conectar" TextColor="Black" Clicked="Button_Clicked" BackgroundColor="White"/>
 
                 </StackLayout>
                 

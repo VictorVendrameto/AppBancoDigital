@@ -6,6 +6,9 @@
         <StackLayout>
             <Button Text="Pix" TextColor="Black" Clicked="Button_Clicked" BackgroundColor="#1DB954"/>
             <Button Text="Conta" TextColor="Black" Clicked="Button_Clicked_1" BackgroundColor="#1DB954"/>
+
+
+            <Button Text="Sair" TextColor="Black" Clicked="btnSair_Clicked" BackgroundColor="Aqua"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
