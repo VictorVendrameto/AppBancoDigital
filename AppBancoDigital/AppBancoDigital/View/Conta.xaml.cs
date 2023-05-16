@@ -18,5 +18,9 @@ namespace AppBancoDigital.View
 
             NavigationPage.SetHasNavigationBar(this, false);
         }
+        private void Button_Clicked (object sender, EventArgs e)
+        {
+            App.Current.MainPage = new NavigationPage(new View.Pix());
+        }
     }
 }

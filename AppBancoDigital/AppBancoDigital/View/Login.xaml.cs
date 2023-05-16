@@ -21,7 +21,7 @@ namespace AppBancoDigital.View
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            App.Current.MainPage = new NavigationPage(new View.Menu());
+            App.Current.MainPage = new NavigationPage(new MainPage());
             //dados pro login (temporario)
 
 

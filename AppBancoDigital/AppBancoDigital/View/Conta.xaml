@@ -4,9 +4,13 @@
              x:Class="AppBancoDigital.View.Conta">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            
+            <StackLayout>
+                <Button Text="Pix" TextColor="White" Clicked="Button_Clicked" BackgroundColor="#280354"/>
+
+
+                
+        </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
