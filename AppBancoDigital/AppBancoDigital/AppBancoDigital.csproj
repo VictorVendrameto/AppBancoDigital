@@ -11,10 +11,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Imagens\dep.png" />
     <None Remove="Imagens\pix.png" />
+    <None Remove="Imagens\trans.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Imagens\dep.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Imagens\pix.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
@@ -24,6 +29,12 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
     <PackageReference Include="Xamarin.Forms.MaskedEntry" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Imagens\trans.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>

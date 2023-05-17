@@ -18,11 +18,31 @@ namespace AppBancoDigital.View
 
             NavigationPage.SetHasNavigationBar(this, false);
 
-            btnImgPix.Source = ImageSource.FromResource("AppBancoDigital.Imagens.pix.png");
+            btnImgPix.ImageSource = ImageSource.FromResource("AppBancoDigital.Imagens.pix.png");
+            btnImgTrans.ImageSource = ImageSource.FromResource("AppBancoDigital.Imagens.trans.png");
+            btnImgDep.ImageSource = ImageSource.FromResource("AppBancoDigital.Imagens.dep.png");
         }
+
+        //Pix
         private void Button_Clicked (object sender, EventArgs e)
         {
             App.Current.MainPage = new NavigationPage(new View.Pix());
+        }
+
+        //Pagamentos
+        private void Button_Clicked1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked_3(object sender, EventArgs e)
+        {
+
         }
     }
 }

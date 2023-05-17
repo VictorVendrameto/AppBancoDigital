@@ -4,14 +4,21 @@
              x:Class="AppBancoDigital.View.Conta">
     <ContentPage.Content>
         <StackLayout HeightRequest="250">
-            
-            
-                <ImageButton x:Name="btnImgPix" Clicked="Button_Clicked" BackgroundColor="#45078c" BorderColor="#180330" 
-                        BorderWidth="3" Margin="100"/>
 
 
-                
-        
+            <Button x:Name="btnImgPix" Clicked="Button_Clicked" BackgroundColor="#45078c" BorderColor="#180330" 
+                    BorderWidth="3" ImageSource="pix.png" Text="Pix" TextColor="White" Scale="0.3" FontSize="100" 
+                    WidthRequest="1000" Margin="-150,0,-150,0" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="btnImgPagar" Clicked="Button_Clicked1" BackgroundColor="#45078c" BorderColor="#180330"
+                    BorderWidth="3" Text="Pagamentos" TextColor="White" FontSize="50"/>
+            <Button x:Name="btnImgTrans" Clicked="Button_Clicked_2" BackgroundColor="#45078c" BorderColor="#180330"
+                    BorderWidth="3" ImageSource="trans.png" Text="Transferência" TextColor="White" Scale="0.3" FontSize="60" 
+                    WidthRequest="1000" Margin="-150,0,-150,0" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="btnImgDep" Clicked="Button_Clicked_3" BackgroundColor="#45078c" BorderColor="#180330"
+                    BorderWidth="3" ImageSource="dep.png" Text="Depósito" TextColor="White" FontSize="60" Scale="0.3" 
+                    WidthRequest="1000" Margin="-150,0,-150,0" HorizontalOptions="CenterAndExpand"/>
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
