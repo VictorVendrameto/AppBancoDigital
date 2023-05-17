@@ -6,10 +6,12 @@
     <MasterDetailPage.Master>
         <ContentPage Title="Menu">
             <StackLayout BackgroundColor="White">
-                <Label Text=""/>
-                <Label Text="VITUS" FontSize="25"/>
+                
+                <Label Text="VITUS" FontSize="30" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"
+                       TextColor="White" BackgroundColor="#280354" WidthRequest="1000" HeightRequest="50"/>
 
-                <Button x:Name="btn_sair" Clicked="btnSair_Clicked"/>
+                <Button x:Name="btn_sair" Clicked="btnSair_Clicked" BackgroundColor="#45078c" BorderColor="#180330" 
+                        BorderWidth="3" Text="Sair" TextColor="White"/>
             </StackLayout>
         </ContentPage>
     </MasterDetailPage.Master>

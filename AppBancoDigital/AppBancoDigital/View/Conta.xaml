@@ -3,14 +3,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBancoDigital.View.Conta">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout HeightRequest="250">
             
-            <StackLayout>
-                <Button Text="Pix" TextColor="White" Clicked="Button_Clicked" BackgroundColor="#280354"/>
+            
+                <Button Text="Pix" TextColor="White" Clicked="Button_Clicked" BackgroundColor="#45078c" BorderColor="#180330" 
+                        BorderWidth="3" ImageSource="pix.png" Margin="100"/>
 
 
                 
-        </StackLayout>
+        
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
