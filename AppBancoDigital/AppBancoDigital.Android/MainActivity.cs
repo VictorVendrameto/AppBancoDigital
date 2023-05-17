@@ -4,6 +4,8 @@ using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
+using Xamarin.Forms;
+using AndroidX.AppCompat.App;
 
 namespace AppBancoDigital.Droid
 {
@@ -14,6 +16,9 @@ namespace AppBancoDigital.Droid
         {
             base.OnCreate(savedInstanceState);
 
+            //Forçar modo claro AppCompatDelegate.DefaultNightMode = AppCompatDelegate.ModeNightNo;
+            AppCompatDelegate.DefaultNightMode = AppCompatDelegate.ModeNightNo;
+            
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());

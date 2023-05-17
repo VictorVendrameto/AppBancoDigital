@@ -6,8 +6,8 @@
         <StackLayout HeightRequest="250">
             
             
-                <Button Text="Pix" TextColor="White" Clicked="Button_Clicked" BackgroundColor="#45078c" BorderColor="#180330" 
-                        BorderWidth="3" ImageSource="pix.png" Margin="100"/>
+                <ImageButton x:Name="btnImgPix" Clicked="Button_Clicked" BackgroundColor="#45078c" BorderColor="#180330" 
+                        BorderWidth="3" Margin="100"/>
 
 
                 

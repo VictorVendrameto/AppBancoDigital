@@ -8,6 +8,10 @@ namespace AppBancoDigital
     {
         public App()
         {
+
+            //Forçar modo claro, ir para MainActivity
+            Device.SetFlags(new string[] { "AppTheme_Experimental" });
+
             InitializeComponent();
 
             MainPage = new Login();

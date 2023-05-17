@@ -18,7 +18,7 @@ namespace AppBancoDigital.View
 
             NavigationPage.SetHasNavigationBar(this, false);
 
-           
+            btnImgPix.Source = ImageSource.FromResource("AppBancoDigital.Imagens.pix.png");
         }
         private void Button_Clicked (object sender, EventArgs e)
         {
