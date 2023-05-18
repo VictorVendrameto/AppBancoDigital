@@ -10,18 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace AppBancoDigital.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Cadastro : ContentPage
+    public partial class Pag : ContentPage
     {
-        public Cadastro()
+        public Pag()
         {
             InitializeComponent();
-
-            NavigationPage.SetHasNavigationBar(this, false);
-        }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-
         }
     }
 }

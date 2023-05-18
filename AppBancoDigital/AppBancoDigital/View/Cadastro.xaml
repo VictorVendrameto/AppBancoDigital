@@ -1,12 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry"
              x:Class="AppBancoDigital.View.Cadastro">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout VerticalOptions="Center">
+            <Label Text="Vitus" TextColor="#280354" FontSize="90" HorizontalOptions="CenterAndExpand"/>
+            <Frame BackgroundColor="#280354" Opacity="1" Margin="10">
+                <StackLayout>
+                    <Label Text="CADASTRO" TextColor="White" FontSize="50" HorizontalTextAlignment="Center"/>
+
+                    <Label Text="CPF" TextColor="White" FontSize="25"/>
+                    <control:MaskedEntry Placeholder="CPF" Mask="XXX.XXX.XXX-XX" 
+                    Keyboard="Numeric"  PlaceholderColor="#56C8A7" TextColor="#56C8A7"/>
+
+                    <Label Text="Senha" TextColor="White" FontSize="25"/>
+                    <Entry x:Name="user_pw" Placeholder="Digite a sua senha"
+                   PlaceholderColor="#56C8A7" TextColor="#56C8A7"/>
+
+                    <Button Clicked="Button_Clicked" Text="CADASTRAR" TextColor="White" BorderColor="#180330" BorderWidth="3" BackgroundColor="#45078c"/>
+                </StackLayout>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

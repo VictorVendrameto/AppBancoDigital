@@ -32,17 +32,18 @@ namespace AppBancoDigital.View
         //Pagamentos
         private void Button_Clicked1(object sender, EventArgs e)
         {
-
+            App.Current.MainPage = new NavigationPage(new View.Pag());
         }
 
+        //Transferencia
         private void Button_Clicked_2(object sender, EventArgs e)
         {
-
+            App.Current.MainPage = new NavigationPage(new View.Trans());
         }
-
+        //Deposito
         private void Button_Clicked_3(object sender, EventArgs e)
         {
-
+            App.Current.MainPage = new NavigationPage(new View.Dep());
         }
     }
 }
