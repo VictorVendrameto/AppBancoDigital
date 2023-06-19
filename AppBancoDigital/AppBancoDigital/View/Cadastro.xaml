@@ -4,16 +4,33 @@
              xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry"
              x:Class="AppBancoDigital.View.Cadastro">
     <ContentPage.Content>
+        
         <StackLayout VerticalOptions="Center">
             <Label Text="Vitus" TextColor="#280354" FontSize="90" HorizontalOptions="CenterAndExpand"/>
+            
             <Frame BackgroundColor="#280354" Opacity="1" Margin="10">
                 <StackLayout>
                     <Label Text="CADASTRO" TextColor="White" FontSize="50" HorizontalTextAlignment="Center"/>
 
+                    <!--Nome-->
+                    <Label Text="Nome" TextColor="White" FontSize="25"/>
+                    <Entry x:Name="user" Placeholder="Digite o seu nome"
+                     PlaceholderColor="#56C8A7" TextColor="#56C8A7"/>
+                    
+                    <!--CPF-->
                     <Label Text="CPF" TextColor="White" FontSize="25"/>
-                    <control:MaskedEntry Placeholder="CPF" Mask="XXX.XXX.XXX-XX" 
+                    <control:MaskedEntry x:Name="cpf" Placeholder="CPF" Mask="XXX.XXX.XXX-XX" 
                     Keyboard="Numeric"  PlaceholderColor="#56C8A7" TextColor="#56C8A7"/>
 
+                    <Label Text="Data de nascimento" TextColor="White" FontSize="25"/>
+                    <DatePicker x:Name="dtpck_DataNasc" TextColor="#56C8A7"/>
+                    
+                    <!--Email-->
+                    <Label Text="Email" TextColor="White" FontSize="25"/>
+                    <Entry x:Name="email" Placeholder="Digite o seu email" 
+                    PlaceholderColor="#56C8A7" TextColor="#56C8A7"/>
+                    
+                    <!--Senha-->
                     <Label Text="Senha" TextColor="White" FontSize="25"/>
                     <Entry x:Name="user_pw" Placeholder="Digite a sua senha"
                    PlaceholderColor="#56C8A7" TextColor="#56C8A7"/>
