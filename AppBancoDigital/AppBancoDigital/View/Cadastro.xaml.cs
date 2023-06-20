@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 using AppBancoDigital.Model;
 using AppBancoDigital.Service;
+
 using Xamarin.Essentials;
 using System.Net.Mail;
 
@@ -28,7 +30,7 @@ namespace AppBancoDigital.View
             try
             {
                 string[] cpf_pontuado = cpf.Text.Split('.', '-');
-                string[] cpf_digitado = cpf_pontuado[0] + cpf_pontuado[1] + cpf_pontuado[2] + cpf_pontuado[3];
+                string cpf_digitado = cpf_pontuado[0] + cpf_pontuado[1] + cpf_pontuado[2] + cpf_pontuado[3];
 
                 Correntista c = await DataServiceCorrentista.SignOn(new Correntista
                 {
@@ -41,20 +43,20 @@ namespace AppBancoDigital.View
 
                 });
 
-                if (c.id != null)
+                if (c.Id != null)
                 {
-                    App.DadosCorren = c;
+                    App.DadosCorrentista = c;
 
-                    await Navigation.Push
+                    await Navigation.PushAsync(new Conta());
                 }
                 else 
                 {
-                    
+                    throw new Exception("Erro ao realizar cadastro");
                 }
             }
-            catch
+            catch(Exception err)
             {
-
+                await DisplayAlert("Erro", err.Message, "OK");
             }
         }
     }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
+
 namespace AppBancoDigital.Service
 {
     public class DataService
@@ -19,9 +20,9 @@ namespace AppBancoDigital.Service
             string uri = server + rota;
 
             if (Connectivity.NetworkAccess != NetworkAccess.Internet)
-            {
                 throw new Exception("Conecte-se à Internet.");
-            }
+            
+
             using (HttpClient client = new HttpClient()) 
             {
                 HttpResponseMessage response = await client.GetAsync(uri);
@@ -31,7 +32,10 @@ namespace AppBancoDigital.Service
                     json_response = response.Content.ReadAsStringAsync().Result;
                 }
                 else
+                {
                     throw new Exception(DecodeServerError(response.StatusCode));
+                }
+                    
             }
             return json_response;
         }

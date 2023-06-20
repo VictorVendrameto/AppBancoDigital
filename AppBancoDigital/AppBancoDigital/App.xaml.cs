@@ -2,10 +2,12 @@
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
 namespace AppBancoDigital
 {
     public partial class App : Application
     {
+        public static Model.Correntista DadosCorrentista { get; set; }
         public App()
         {
 
@@ -14,7 +16,14 @@ namespace AppBancoDigital
 
             InitializeComponent();
 
-            MainPage = new Login();
+            if (Properties.ContainsKey("usuario_logado"))
+            {
+                MainPage = new NavigationPage(new MainPage());
+            }
+            else
+            {
+                MainPage = new NavigationPage(new View.Login());
+            }
         }
 
         protected override void OnStart()

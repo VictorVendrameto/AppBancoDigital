@@ -20,11 +20,9 @@
                     <Label Text="Login Conta" TextColor="White" FontSize="Title" HorizontalOptions="Center"/>
 
                     <Label Text="CPF:" TextColor="White" FontSize="Large"/>
-
-                    <control:MaskedEntry Placeholder="CPF" Mask="XXX.XXX.XXX-XX" Keyboard="Numeric"  PlaceholderColor="#56C8A7" TextColor="#56C8A7"/>
+                    <control:MaskedEntry x:Name="user" Placeholder="CPF" Mask="XXX.XXX.XXX-XX" Keyboard="Numeric"  PlaceholderColor="#56C8A7" TextColor="#56C8A7"/>
 
                     <Label Text="Senha:" TextColor="White" FontSize="Large"/>
-
                     <Entry IsPassword="True" x:Name="conta_pw" Placeholder="Insira sua senha" TextColor="#56C8A7" PlaceholderColor="#56C8A7"/>
 
                     <Button Text="Conectar" TextColor="White" BorderColor="#180330" BorderWidth="3" Clicked="Button_Clicked" BackgroundColor="#45078c"/>

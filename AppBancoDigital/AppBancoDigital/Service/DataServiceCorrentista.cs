@@ -12,13 +12,19 @@ namespace AppBancoDigital.Service
         public static async Task<Correntista> AuthenticCorrentista(Correntista c)
         {
             var json_to_send = JsonConvert.SerializeObject(c);
+
+            Console.WriteLine("_____________________________________________");
+            Console.WriteLine(json_to_send);
+            Console.WriteLine("_____________________________________________");
+
             string json = await DataService.PostDataToService(json_to_send, "/correntista/entrar");
 
-            Correntista correntista = new Correntista();
-            if (json != "false") 
-            {
-                correntista = JsonConvert.DeserializeObject<Correntista>(json);
-            }
+
+            if (json != "false")
+                return null;
+
+              Correntista correntista = JsonConvert.DeserializeObject<Correntista>(json);
+            
             return correntista;
         }
 
@@ -26,15 +32,13 @@ namespace AppBancoDigital.Service
         {
             var json_to_send = JsonConvert.SerializeObject(c);
 
+            Console.WriteLine("_____________________________________________");
+            Console.WriteLine(json_to_send);
+            Console.WriteLine("_____________________________________________");
+
             string json = await DataService.PostDataToService(json_to_send, "/correntista/save");
 
-            Console.WriteLine("_____________________________________________");
-            Console.WriteLine(json);
-            Console.WriteLine("_____________________________________________");
-
-            Correntista correntista = JsonConvert.DeserializeObject<Correntista>(json);
-
-            return correntista;
+            return JsonConvert.DeserializeObject<Correntista>(json);
         }
     }
 }
