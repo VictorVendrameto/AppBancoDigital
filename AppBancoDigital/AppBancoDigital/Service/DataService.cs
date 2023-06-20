@@ -39,33 +39,34 @@ namespace AppBancoDigital.Service
             }
             return json_response;
         }
-        protected static async Task<string> PostDataToService(string json_object, string rota) 
+        protected static async Task<string> PostDataToService(string json_object, string rota)
         {
             string json_response;
 
             string uri = server + rota;
 
-            if (Connectivity.NetworkAccess != NetworkAccess.Internet) 
+            if (Connectivity.NetworkAccess != NetworkAccess.Internet)
             {
                 throw new Exception("Conecte-se à Internet.");
             }
-            using (HttpClient client = new HttpClient()) 
+            using (HttpClient client = new HttpClient())
             {
                 HttpResponseMessage response = await client.PostAsync(uri,
-                    new StringContent(json_object, Encoding.UTF8, 
+                    new StringContent(json_object, Encoding.UTF8,
                     "application/json"));
 
-                if(response.IsSuccessStatusCode) 
+                if (response.IsSuccessStatusCode)
                 {
                     json_response = response.Content.ReadAsStringAsync().Result;
                 }
-                else 
+                else
                 {
                     throw new Exception(DecodeServerError(response.StatusCode));
                 }
 
                 return json_response;
             }
+        }
 
             private static string DecodeServerError(System.Net.HttpStatusCode status_code) 
             {
@@ -101,4 +102,3 @@ namespace AppBancoDigital.Service
             }
         }
     }
-}
