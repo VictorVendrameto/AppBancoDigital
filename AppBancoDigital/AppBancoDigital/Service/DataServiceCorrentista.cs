@@ -17,7 +17,7 @@ namespace AppBancoDigital.Service
             Console.WriteLine(json_to_send);
             Console.WriteLine("_____________________________________________");
 
-            string json = await DataService.PostDataToService(json_to_send, "/correntista/entrar");
+            string json = await DataService.PostDataToService(json_to_send, "/correntista/login");
 
 
             if (json != "false")
