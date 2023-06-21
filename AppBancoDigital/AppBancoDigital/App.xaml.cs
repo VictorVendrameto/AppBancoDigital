@@ -16,7 +16,7 @@ namespace AppBancoDigital
 
             InitializeComponent();
 
-            if (Properties.ContainsKey("usuario_logado"))
+            if (Properties.ContainsKey("user_logado"))
             {
                 MainPage = new NavigationPage(new MainPage());
             }
