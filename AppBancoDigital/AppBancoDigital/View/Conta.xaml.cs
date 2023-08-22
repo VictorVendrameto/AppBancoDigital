@@ -17,10 +17,6 @@ namespace AppBancoDigital.View
             InitializeComponent();
 
             NavigationPage.SetHasNavigationBar(this, false);
-
-            btnImgPix.ImageSource = ImageSource.FromResource("AppBancoDigital.Imagens.pix.png");
-            btnImgTrans.ImageSource = ImageSource.FromResource("AppBancoDigital.Imagens.trans.png");
-            btnImgDep.ImageSource = ImageSource.FromResource("AppBancoDigital.Imagens.dep.png");
         }
 
         //Pix

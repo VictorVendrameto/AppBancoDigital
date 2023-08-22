@@ -27,7 +27,11 @@ namespace AppBancoDigital.View
         //Login
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            try
+            App.Current.MainPage = new NavigationPage(new View.Conta());
+
+
+
+            /*try
             {
                 string[] cpf_pontuado = user.Text.Split('.', '-');
                 string cpf_digitado = cpf_pontuado[0] + cpf_pontuado[1] + cpf_pontuado[2] + cpf_pontuado[3];
@@ -66,7 +70,9 @@ namespace AppBancoDigital.View
                 DisplayAlert("Ops", err.Message, "OK");
             }
             //Finally{
+
             //Carregando.IsRunning = false; }
+            */
         }
 
         //cadastro
