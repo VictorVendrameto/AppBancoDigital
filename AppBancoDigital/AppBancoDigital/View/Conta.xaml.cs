@@ -17,6 +17,11 @@ namespace AppBancoDigital.View
             InitializeComponent();
 
             NavigationPage.SetHasNavigationBar(this, false);
+
+            btnPix.Source = ImageSource.FromResource("AppBancoDigital.Imagens.pix.png");
+            btnDep.Source = ImageSource.FromResource("AppBancoDigital.Imagens.dep.png");
+            btnTrans.Source = ImageSource.FromResource("AppBancoDigital.Imagens.trans.png");
+            btnPag.Source = ImageSource.FromResource("AppBancoDigital.Imagens.pix.png");
         }
 
         //Pix
@@ -32,12 +37,12 @@ namespace AppBancoDigital.View
         }
 
         //Transferencia
-        private void Button_Clicked_2(object sender, EventArgs e)
+        private void Button_Clicked2(object sender, EventArgs e)
         {
             App.Current.MainPage = new NavigationPage(new View.Trans());
         }
         //Deposito
-        private void Button_Clicked_3(object sender, EventArgs e)
+        private void Button_Clicked3(object sender, EventArgs e)
         {
             App.Current.MainPage = new NavigationPage(new View.Dep());
         }

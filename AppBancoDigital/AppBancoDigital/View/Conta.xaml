@@ -4,25 +4,16 @@
              x:Class="AppBancoDigital.View.Conta">
     <ContentPage.Content>
         <StackLayout>
-            <Grid ColumnDefinitions="*, *"
-                  RowDefinitions="*, *">
-
-
-            <ImageButton x:Name="btnImgPix" Clicked="Button_Clicked" BackgroundColor="Transparent" BorderColor="#180330" 
-                    Source="AppBancoDigital.Imagens.pix.png"
-                    Grid.Column="0" Grid.Row="0" Scale="0.3"/>
-            
-            <ImageButton x:Name="btnImgPagar" Clicked="Button_Clicked1" BackgroundColor="Transparent" BorderColor="#180330"
-             HorizontalOptions="FillAndExpand" Grid.Column="0" Grid.Row="1"/>
-            
-            <ImageButton x:Name="btnImgTrans" Clicked="Button_Clicked_2" BackgroundColor="Transparent" BorderColor="#180330"
-                    Source="trans.png" 
-                    HorizontalOptions="FillAndExpand"/>
-            
-            <ImageButton x:Name="btnImgDep" Clicked="Button_Clicked_3" BackgroundColor="Transparent" BorderColor="#180330"
-                  />
-
-            </Grid>
+            <Label Text="VITUS" TextColor="White" FontSize="35" BackgroundColor="#280354" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+            <Frame CornerRadius="10" VerticalOptions="StartAndExpand">
+                <Grid ColumnDefinitions="*, *, *"
+                  RowDefinitions="*">
+                    <ImageButton x:Name="btnPix" Grid.Column="0" Grid.Row="0" BackgroundColor="White" BorderColor="Black" BorderWidth="1" Clicked="Button_Clicked"/>
+                    <ImageButton x:Name="btnPag" Grid.Column="1" Grid.Row="0" BackgroundColor="White" BorderColor="Black" BorderWidth="1" Clicked="Button_Clicked1"/>
+                    <ImageButton x:Name="btnTrans" Grid.Column="2" Grid.Row="0" BackgroundColor="White" BorderColor="Black" BorderWidth="1" Clicked="Button_Clicked2"/>
+                    <ImageButton x:Name="btnDep" Grid.Column="3" Grid.Row="0" BackgroundColor="White" BorderColor="Black" BorderWidth="1" Clicked="Button_Clicked3"/>                
+                </Grid>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
