@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppBancoDigital.View.PagnPix">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Frame CornerRadius="10" HeightRequest="100" WidthRequest="200" VerticalOptions="StartAndExpand">
+                <Grid ColumnDefinitions="*, *, *"
+                  RowDefinitions="*">
+                    <ImageButton x:Name="btnReceber" Grid.Column="0" Grid.Row="0" BackgroundColor="White" BorderColor="#280354" BorderWidth="1" Clicked="Button_Clicked" Padding="10, 0 ,10, 0"/>
+                    <ImageButton x:Name="btnEnviar" Grid.Column="1" Grid.Row="0" BackgroundColor="White" BorderColor="#280354" BorderWidth="1" Clicked="Button_Clicked1" Padding="10, 0 ,10, 0"/>
+                    <ImageButton x:Name="btnExibir" Grid.Column="2" Grid.Row="0" BackgroundColor="White" BorderColor="#280354" BorderWidth="1" Clicked="Button_Clicked2" Padding="10, 0 ,10, 0"/>
+                    <ImageButton x:Name="btnLer" Grid.Column="3" Grid.Row="0" BackgroundColor="White" BorderColor="#280354" BorderWidth="1" Clicked="Button_Clicked3" Padding="0, 0 ,0, 0"/>
+                </Grid>
+            </Frame>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

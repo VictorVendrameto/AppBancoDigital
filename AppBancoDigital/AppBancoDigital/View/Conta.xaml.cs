@@ -21,13 +21,13 @@ namespace AppBancoDigital.View
             btnPix.Source = ImageSource.FromResource("AppBancoDigital.Imagens.pix.png");
             btnDep.Source = ImageSource.FromResource("AppBancoDigital.Imagens.dep.png");
             btnTrans.Source = ImageSource.FromResource("AppBancoDigital.Imagens.trans.png");
-            btnPag.Source = ImageSource.FromResource("AppBancoDigital.Imagens.pix.png");
+            btnPag.Source = ImageSource.FromResource("AppBancoDigital.Imagens.pag.png");
         }
 
         //Pix
         private void Button_Clicked (object sender, EventArgs e)
         {
-            App.Current.MainPage = new NavigationPage(new View.Pix());
+            App.Current.MainPage = new NavigationPage(new View.PagnPix());
         }
 
         //Pagamentos
