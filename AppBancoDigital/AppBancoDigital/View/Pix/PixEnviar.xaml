@@ -4,9 +4,9 @@
              x:Class="AppBancoDigital.View.Pix.PixEnviar">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Gerar QR Code"  Style="{StaticResource btnRoxo}" Clicked="Button_Clicked"/>
+
+            <Image x:Name="img_qrcode"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

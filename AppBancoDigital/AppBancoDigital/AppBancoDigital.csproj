@@ -12,7 +12,9 @@
 
   <ItemGroup>
     <None Remove="Imagens\dep.png" />
+    <None Remove="Imagens\enviarpix.png" />
     <None Remove="Imagens\pag.png" />
+    <None Remove="Imagens\pagpix.png" />
     <None Remove="Imagens\pix.png" />
     <None Remove="Imagens\trans.png" />
   </ItemGroup>
@@ -21,7 +23,13 @@
     <EmbeddedResource Include="Imagens\dep.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Imagens\enviarpix.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Imagens\pag.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagens\pagpix.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Imagens\pix.png">
