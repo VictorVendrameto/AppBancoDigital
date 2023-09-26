@@ -18,6 +18,7 @@ namespace AppBancoDigital.View
 
             btnReceber.Source = ImageSource.FromResource("AppBancoDigital.Imagens.pagpix.png");
             btnEnviar.Source = ImageSource.FromResource("AppBancoDigital.Imagens.enviarpix.png");
+            btnLer.Source = ImageSource.FromResource("AppBancoDIgital.Imagens.LerQR.png");
         }
         //receber
         private void Button_Clicked(object sender, EventArgs e)

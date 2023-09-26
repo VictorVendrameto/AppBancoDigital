@@ -4,9 +4,7 @@
              x:Class="AppBancoDigital.View.Pix.PixEnviar">
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Gerar QR Code"  Style="{StaticResource btnRoxo}" Clicked="Button_Clicked"/>
-
-            <Image x:Name="img_qrcode"/>
+           
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

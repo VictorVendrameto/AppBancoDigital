@@ -16,5 +16,7 @@ namespace AppBancoDigital.View.Pix
 		{
 			InitializeComponent ();
 		}
-	}
+
+       
+    }
 }

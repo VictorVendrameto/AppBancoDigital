@@ -13,6 +13,7 @@
   <ItemGroup>
     <None Remove="Imagens\dep.png" />
     <None Remove="Imagens\enviarpix.png" />
+    <None Remove="Imagens\LerQR.png" />
     <None Remove="Imagens\pag.png" />
     <None Remove="Imagens\pagpix.png" />
     <None Remove="Imagens\pix.png" />
@@ -24,6 +25,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Imagens\enviarpix.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagens\LerQR.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Imagens\pag.png">
@@ -43,6 +47,7 @@
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
     <PackageReference Include="Xamarin.Forms.MaskedEntry" Version="1.1.0" />
+    <PackageReference Include="ZXing.Net" Version="0.16.9" />
   </ItemGroup>
 
   <ItemGroup>
