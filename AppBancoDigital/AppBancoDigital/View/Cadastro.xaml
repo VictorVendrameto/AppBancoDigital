@@ -2,10 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry"
+             NavigationPage.HasNavigationBar="True"
              x:Class="AppBancoDigital.View.Cadastro">
     <ContentPage.Content>
         
         <StackLayout VerticalOptions="Center">
+           
             <Label Text="Vitus" TextColor="#280354" FontSize="90" HorizontalOptions="CenterAndExpand"/>
             
             <Frame BackgroundColor="#280354" Opacity="1" Margin="10">

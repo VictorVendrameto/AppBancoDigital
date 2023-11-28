@@ -23,7 +23,7 @@ namespace AppBancoDigital
             //setar uma pagina inicial
             else
             {
-                MainPage = new NavigationPage(new View.Conta());
+                MainPage = new NavigationPage(new View.Login());
             }
         }
 

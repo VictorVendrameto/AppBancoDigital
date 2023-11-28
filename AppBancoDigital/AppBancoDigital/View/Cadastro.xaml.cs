@@ -22,7 +22,7 @@ namespace AppBancoDigital.View
         {
             InitializeComponent();
 
-            NavigationPage.SetHasNavigationBar(this, false);
+            NavigationPage.SetHasNavigationBar(this, true);
         }
 
         private async void Button_Clicked(object sender, EventArgs e)
@@ -42,6 +42,7 @@ namespace AppBancoDigital.View
                     Data_cad = DateTime.Now,
 
                 });
+                App.Current.MainPage = new NavigationPage(new View.Conta());
 
                 if (c.Id != null)
                 {
@@ -49,12 +50,12 @@ namespace AppBancoDigital.View
 
                     await Navigation.PushAsync(new Conta());
                 }
-                else 
+                else
                 {
                     throw new Exception("Erro ao realizar cadastro");
                 }
             }
-            catch(Exception err)
+            catch (Exception err)
             {
                 await DisplayAlert("Erro", err.Message, "OK");
             }
